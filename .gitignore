@@ -217,4 +217,5 @@ data/
 venv/
 
 # draft
-LSTM_RNN.ipynb
+/images
+tree.txt
