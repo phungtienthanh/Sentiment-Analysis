@@ -216,6 +216,9 @@ data/
 # environment files
 venv/
 
+# ckpt
+saved_models/
+
 # draft
 /images
 tree.txt

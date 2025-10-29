@@ -6,6 +6,13 @@ import torch.nn.functional as F
 from transformers import BertModel
 
 class BertLSTMClassifier(nn.Module):
+    """
+    Kiến trúc mô hình chính:
+    1. BERT (đóng băng) làm bộ trích xuất đặc trưng.
+    2. Stacked BiLSTM để học ngữ cảnh tuần tự.
+    3. Lớp Attention để tổng hợp thông tin.
+    4. Lớp Classifier (Linear) để phân loại.
+    """
     # __init__ sẽ nhận các tham số từ file config
     def __init__(self, bert_model_name, lstm_hidden_size, lstm_layers, dropout_rate, num_classes):
         

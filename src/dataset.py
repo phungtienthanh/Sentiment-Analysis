@@ -3,8 +3,10 @@
 import torch
 from torch.utils.data import Dataset
 
-# Đổi tên class thành "SST5Dataset" cho chính thức
 class SST5Dataset(Dataset):
+    """
+    Class Dataset, nhận dữ liệu từ HF Datasets và tokenizer, sau đó trả về các tensors đã xử lý
+    """
     def __init__(self, data, tokenizer, max_length):
         self.data = data
         self.tokenizer = tokenizer
