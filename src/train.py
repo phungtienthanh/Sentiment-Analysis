@@ -135,6 +135,11 @@ def main():
         num_classes=config.NUM_CLASSES
     ).to(config.DEVICE)
     
+    # sử dụng DataParallel trên nhiều GPU
+    if torch.cuda.device_count() > 1:
+        print(f"Using {torch.cuda.device_count()} GPUs!")
+        model = nn.DataParallel(model)
+    
     # --- 5. Khởi tạo Loss Function và Optimizer ---
     print("Initializing loss function and optimizer...")
     # CrossEntropyLoss đã bao gồm Softmax
@@ -147,7 +152,13 @@ def main():
         lr=config.LEARNING_RATE
     )
     
-    # --- 6. Vòng lặp Training ---
+    # --- 6. Check CUDA ---
+    if torch.cuda.is_available():
+        print(f"Number of CUDA devices: {torch.cuda.device_count()}")
+        print(f"Current CUDA device: {torch.cuda.current_device()}")
+        print(f"Device name: {torch.cuda.get_device_name(0)}") # For device 0
+    
+    # --- 7. Vòng lặp Training ---
     print("--- Starting Training ---")
     best_val_f1 = -1.0 # Lưu lại F1 macro tốt nhất
 

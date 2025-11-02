@@ -17,8 +17,8 @@ DROPOUT_RATE = 0.3
 
 # --- 3. Cấu hình Training ---
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-BATCH_SIZE = 32      # Tăng batch size cho training (thay vì 8 để test)
-NUM_EPOCHS = 5       # Số epoch để huấn luyện
+BATCH_SIZE = 256     # Tăng batch size cho training (thay vì 8 để test)
+NUM_EPOCHS = 20      # Số epoch để huấn luyện
 LEARNING_RATE = 2e-5 # Learning rate phổ biến cho AdamW
 
 # --- 4. Cấu hình Đường dẫn ---
