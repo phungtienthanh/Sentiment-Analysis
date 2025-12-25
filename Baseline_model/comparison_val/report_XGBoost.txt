@@ -1,0 +1,14 @@
+Model: XGBoost
+Validation Accuracy: 0.3597
+------------------------------
+               precision    recall  f1-score   support
+
+Very Negative       0.51      0.14      0.22       139
+     Negative       0.43      0.46      0.44       289
+      Neutral       0.27      0.11      0.16       229
+     Positive       0.32      0.68      0.43       279
+Very Positive       0.43      0.16      0.24       165
+
+     accuracy                           0.36      1101
+    macro avg       0.39      0.31      0.30      1101
+ weighted avg       0.38      0.36      0.32      1101

@@ -1,0 +1,14 @@
+Model: Logistic Regression
+Validation Accuracy: 0.3942
+------------------------------
+               precision    recall  f1-score   support
+
+Very Negative       0.43      0.14      0.21       139
+     Negative       0.41      0.60      0.49       289
+      Neutral       0.34      0.14      0.20       229
+     Positive       0.38      0.63      0.47       279
+Very Positive       0.45      0.21      0.28       165
+
+     accuracy                           0.39      1101
+    macro avg       0.40      0.34      0.33      1101
+ weighted avg       0.40      0.39      0.36      1101

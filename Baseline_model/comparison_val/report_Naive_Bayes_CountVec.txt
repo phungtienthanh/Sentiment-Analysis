@@ -1,0 +1,14 @@
+Model: Naive Bayes (CountVec)
+Validation Accuracy: 0.3751
+------------------------------
+               precision    recall  f1-score   support
+
+Very Negative       0.41      0.22      0.28       139
+     Negative       0.41      0.54      0.46       289
+      Neutral       0.28      0.15      0.19       229
+     Positive       0.35      0.51      0.42       279
+Very Positive       0.42      0.32      0.36       165
+
+     accuracy                           0.38      1101
+    macro avg       0.37      0.34      0.34      1101
+ weighted avg       0.37      0.38      0.36      1101
