@@ -1,14 +1,14 @@
 Model: k-NN
-Validation Accuracy: 0.3851
+Validation Accuracy: 0.3869
 ------------------------------
                precision    recall  f1-score   support
 
-Very Negative       0.36      0.22      0.28       139
-     Negative       0.41      0.58      0.48       289
-      Neutral       0.29      0.17      0.21       229
-     Positive       0.38      0.54      0.45       279
-Very Positive       0.47      0.22      0.30       165
+Very Negative       0.38      0.21      0.27       139
+     Negative       0.40      0.62      0.49       289
+      Neutral       0.28      0.16      0.20       229
+     Positive       0.38      0.51      0.43       279
+Very Positive       0.53      0.25      0.34       165
 
      accuracy                           0.39      1101
-    macro avg       0.38      0.35      0.34      1101
- weighted avg       0.38      0.39      0.36      1101
+    macro avg       0.39      0.35      0.35      1101
+ weighted avg       0.39      0.39      0.36      1101

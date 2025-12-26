@@ -45,7 +45,7 @@ model_files = {
     "Naive Bayes (CountVec)": "sst5_countvec_model.joblib" # File này cần xử lý đặc biệt
 }
 
-OUTPUT_FOLDER = "comparison/test"
+OUTPUT_FOLDER = "comparison_test"
 if not os.path.exists(OUTPUT_FOLDER):
     os.makedirs(OUTPUT_FOLDER)
 

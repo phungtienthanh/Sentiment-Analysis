@@ -1,14 +1,14 @@
 Model: Random Forest
-Validation Accuracy: 0.3660
+Validation Accuracy: 0.3715
 ------------------------------
                precision    recall  f1-score   support
 
-Very Negative       0.49      0.12      0.20       139
-     Negative       0.39      0.51      0.44       289
-      Neutral       0.32      0.13      0.18       229
-     Positive       0.34      0.65      0.44       279
-Very Positive       0.49      0.18      0.26       165
+Very Negative       0.45      0.14      0.21       139
+     Negative       0.38      0.51      0.44       289
+      Neutral       0.35      0.13      0.19       229
+     Positive       0.34      0.66      0.45       279
+Very Positive       0.52      0.18      0.27       165
 
      accuracy                           0.37      1101
-    macro avg       0.40      0.32      0.30      1101
+    macro avg       0.41      0.32      0.31      1101
  weighted avg       0.39      0.37      0.33      1101

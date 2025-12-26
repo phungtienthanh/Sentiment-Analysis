@@ -45,7 +45,7 @@ def train_random_forest():
 
     tfidf = TfidfVectorizer(
         preprocessor=custom_preprocessor, tokenizer=custom_tokenizer,
-        ngram_range=(1, 3), min_df=2, max_features=15000
+        ngram_range=(1, 3), min_df=2, max_features=25000
     )
     
 
