@@ -1,0 +1,12 @@
+datasets
+transformers
+pandas
+torch
+torchvision
+torchaudio
+matplotlib
+seaborn
+tqdm
+scikit-learn
+
+# note: phải cài torch phù hợp với CUDA của máy nếu dùng GPU 
