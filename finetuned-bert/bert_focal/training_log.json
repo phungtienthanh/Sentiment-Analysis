@@ -1,0 +1,105 @@
+{
+  "model": "bert-base-uncased",
+  "timestamp": "2025-12-26T17:41:16.807365",
+  "total_training_time": 351.15035343170166,
+  "average_epoch_time": 87.21109813451767,
+  "config": {
+    "model_name": "bert-base-uncased",
+    "num_labels": 5,
+    "max_seq_length": 64,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "epochs": 4,
+    "warmup_steps": 500,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "data_dir": "/teamspace/studios/this_studio/project_web_mining/data/sst/sst-5",
+    "seed": 42,
+    "num_workers": 0,
+    "save_dir": "bert_models/saved_models/bert_2",
+    "log_dir": "bert_models/logs/bert_2",
+    "label_list": {
+      "0": "Very Negative",
+      "1": "Negative",
+      "2": "Neutral",
+      "3": "Positive",
+      "4": "Very Positive"
+    }
+  },
+  "training_history": {
+    "train_loss": [
+      1.2648176015093084,
+      0.8944040460979448,
+      0.6785356404629539,
+      0.4911056695582715
+    ],
+    "train_accuracy": [
+      0.3052434456928839,
+      0.49836142322097376,
+      0.6003043071161048,
+      0.7064606741573034
+    ],
+    "train_macro_f1": [
+      0.27226782182652653,
+      0.47477339219407444,
+      0.5929943800221682,
+      0.7007192253641492
+    ],
+    "dev_loss": [
+      0.9986543774604797,
+      0.8991120866366795,
+      0.9070903079850333,
+      0.9770342281886509
+    ],
+    "dev_accuracy": [
+      0.47229791099000906,
+      0.4877384196185286,
+      0.5022706630336058,
+      0.508628519527702
+    ],
+    "dev_macro_f1": [
+      0.42312539602098376,
+      0.48709049890952827,
+      0.49904912180137906,
+      0.5073303484719465
+    ],
+    "dev_precision": [
+      0.4740722213080284,
+      0.4853789048782951,
+      0.4971822028816863,
+      0.505445688774991
+    ],
+    "dev_recall": [
+      0.4262483541899842,
+      0.5058847466970506,
+      0.5109578274175961,
+      0.5144782408028171
+    ],
+    "learning_rate": [
+      1.0680000000000001e-05,
+      1.880281690140845e-05,
+      9.401408450704225e-06,
+      0.0
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.5411764705882353,
+    "macro_f1": 0.5370762344759223,
+    "precision": 0.5403588100399372,
+    "recall": 0.5360900712644887
+  },
+  "best_dev_metrics": {
+    "accuracy": 0.508628519527702,
+    "macro_f1": 0.5073303484719465,
+    "precision": 0.505445688774991,
+    "recall": 0.5144782408028171
+  },
+  "gpu_memory": {
+    "total_gb": 15.828320256,
+    "allocated_gb": 4.814193152
+  },
+  "model_parameters": {
+    "total": 109486085,
+    "trainable": 109486085
+  }
+}

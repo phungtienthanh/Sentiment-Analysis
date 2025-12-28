@@ -1,0 +1,50 @@
+
+================================================================================
+SST-5 SENTIMENT ANALYSIS - ELECTRA MODEL TRAINING SUMMARY
+================================================================================
+
+MODEL CONFIGURATION:
+  Model Name:           google/electra-base-discriminator
+  Total Parameters:     109,486,085
+  Trainable Parameters: 109,486,085
+
+TRAINING CONFIGURATION:
+  Batch Size:           32
+  Learning Rate:        2e-05
+  Epochs:               4
+  Warmup Steps:         500
+  Max Sequence Length:  64
+  Weight Decay:         0.01
+
+TRAINING RESULTS:
+  Total Training Time:  356.61 seconds (5.94 minutes)
+  Average Epoch Time:   88.58 seconds
+  GPU Memory:           15.83 GB total, 1.78 GB used
+
+DEVELOPMENT SET PERFORMANCE (Best Model):
+  Accuracy:             0.5413
+  Macro-F1:             0.5363
+  Precision:            0.5346
+  Recall:               0.5444
+
+TEST SET PERFORMANCE:
+  Accuracy:             0.5864
+  Macro-F1:             0.5754
+  Precision:            0.5786
+  Recall:               0.5748
+
+DATA STATISTICS:
+  Train samples:        8544
+  Dev samples:          1101
+  Test samples:         2210
+  Average sentence length: 19.14 words
+  Max sentence length:  52 words
+
+SAVED ARTIFACTS:
+  Best Model:           saved_models/electra/best_model.pt
+  Training Log:         logs/electra/training_log.json
+  Visualizations:       logs/electra/
+
+================================================================================
+
+

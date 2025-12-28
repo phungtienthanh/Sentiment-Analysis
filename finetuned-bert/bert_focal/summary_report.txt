@@ -1,0 +1,48 @@
+
+================================================================================
+SST-5 SENTIMENT ANALYSIS - BERT MODEL TRAINING SUMMARY
+================================================================================
+
+MODEL CONFIGURATION:
+  Model Name:           bert-base-uncased
+  Total Parameters:     109,486,085
+  Trainable Parameters: 109,486,085
+
+TRAINING CONFIGURATION:
+  Batch Size:           32
+  Learning Rate:        2e-05
+  Epochs:               4
+  Warmup Steps:         500
+  Max Sequence Length:  64
+  Weight Decay:         0.01
+
+TRAINING RESULTS:
+  Total Training Time:  351.15 seconds (5.85 minutes)
+  Average Epoch Time:   87.21 seconds
+  GPU Memory:           15.83 GB total, 4.81 GB used
+
+DEVELOPMENT SET PERFORMANCE (Best Model):
+  Accuracy:             0.5086
+  Macro-F1:             0.5073
+  Precision:            0.5054
+  Recall:               0.5145
+
+TEST SET PERFORMANCE:
+  Accuracy:             0.5412
+  Macro-F1:             0.5371
+  Precision:            0.5404
+  Recall:               0.5361
+
+DATA STATISTICS:
+  Train samples:        8544
+  Dev samples:          1101
+  Test samples:         2210
+  Average sentence length: 19.14 words
+  Max sentence length:  52 words
+
+SAVED ARTIFACTS:
+  Best Model:           bert_models/saved_models/bert_2/best_model.pt
+  Training Log:         bert_models/logs/bert_2/training_log.json
+  Visualizations:       bert_models/logs/bert_2/
+
+================================================================================
